@@ -19,23 +19,24 @@ body {
 
             &:hover {
                 color: #40B6DC;
+                cursor: pointer;
             }
         }
     }
 
     .my-card {
+
+        transition: all .2s ease 0s;
+
+        &:hover {
+            scale: 1.05;
+            cursor: pointer;
+        }
+
+
         img {
             border-radius: 1rem;
             border: 2px solid black;
-        }
-
-        .back-card {
-            background: black;
-            border-radius: 1rem;
-            width: 224px;
-            height: 334px;
-            display: none;
-            position: absolute;
         }
 
         .circle-vote {
@@ -51,6 +52,30 @@ body {
             left: -.8rem;
             scale: 1.5;
         }
+    }
+
+    .text {
+
+        padding-left: 1rem;
+
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h3 {
+            font-size: medium;
+
+            &:hover {
+                color: #40B6DC;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            font-size: small;
+        }
+
     }
 
 }
