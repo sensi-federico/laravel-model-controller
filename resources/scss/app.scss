@@ -1,6 +1,56 @@
 @import '~bootstrap/scss/bootstrap';
 
+img {
+    max-width: 100%;
+}
 
-.card {
-    height: 250px;
+body {
+
+    background-color: #f1f1f1;
+
+    .navbar {
+        background-color: #082541;
+        color: white;
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+
+            &:hover {
+                color: #40B6DC;
+            }
+        }
+    }
+
+    .my-card {
+        img {
+            border-radius: 1rem;
+            border: 2px solid black;
+        }
+
+        .back-card {
+            background: black;
+            border-radius: 1rem;
+            width: 224px;
+            height: 334px;
+            display: none;
+            position: absolute;
+        }
+
+        .circle-vote {
+            color: black;
+            border: 1px solid black;
+            background: white;
+            width: 30px;
+            text-align: center;
+            padding: .1rem;
+            border-radius: 50%;
+            position: relative;
+            top: -1rem;
+            left: -.8rem;
+            scale: 1.5;
+        }
+    }
+
 }
